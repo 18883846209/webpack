@@ -1,0 +1,2 @@
+webpackJsonp([2],{87:function(o,t,e){(function(o){o.toast().reset("all"),o.toast({text:"this is toast",heading:"",showHideTransition:"fade",allowToastClose:!1,hideAfter:3e3,loader:!1,loaderBg:"#9EC600",stack:5,position:"bottom-left",bgColor:!1,textColor:!1,textAlign:"center",icon:"success",beforeShow:function(){},afterShown:function(){},beforeHide:function(){},afterHidden:function(){},onClick:function(){}})}).call(t,e(15))}},[87]);
+//# sourceMappingURL=toastDemo.807ef361eb0104e6eb27.js.map

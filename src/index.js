@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import './css/common.css';
+import './assets/reset.css';
 import '../static/jquery.toast.css';
 import '../static/jquery.toast';
 import util from './util/util';
@@ -15,9 +15,9 @@ $(() => {
 		$.toast().reset('all');
 		$.toast({
 			text: 'this is toast',
-			// text: '加载中...aa',
+			// text: '加载中...aaa',
 			loader: false,
-			hideAfter: 1500,
+			hideAfter: 1300,
 			position: 'mid-center',
 			textAlign: 'center',
 			allowToastClose: false

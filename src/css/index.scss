@@ -1,18 +1,14 @@
-@import './base.scss';
+@import '../assets/base.scss';
 body {
     // display: flex;
 	// justify-content: center;
 	text-align: center;
-    margin-top: 50px;
     font-size: 20px;
     color: red;
 	@include _bg('../img/bg');
     .border1 {
 		position: relative;
-		width: 60%;
-		margin: 0 auto;
-		// width: round(1.5) / 2;
-		padding: 10px 20px 0;
+		margin: 20px auto 0;
 	}
 	.test {
 		position: relative;

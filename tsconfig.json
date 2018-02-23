@@ -1,0 +1,17 @@
+{  
+    "compilerOptions":{  
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true 
+    },  
+    "include": [  
+        "./src/index.ts"
+    ],  
+    "exclude": [//不包括的文件  
+        "node_module"  
+    ]  
+}

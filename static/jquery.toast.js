@@ -46,6 +46,7 @@ if ( typeof Object.create !== 'function' ) {
             this._toastEl = this._toastEl || $('<div></div>', {
                 class : 'jq-toast-single'
             });
+            // this._toastEl = this._toastEl || '<div class="jq-toast-single"></div>';
 
             // For the loader on top
             _toastContent += '<span class="jq-toast-loader"></span>';            
@@ -130,7 +131,7 @@ if ( typeof Object.create !== 'function' ) {
                     right : this.options.position.right ? this.options.position.right : 'auto'
                 });
             } else {
-                this._container.addClass( 'bottom-left' );
+                this._container.addClass( 'mid-center' );
             }
         },
 
@@ -354,15 +355,15 @@ if ( typeof Object.create !== 'function' ) {
         text: '',
         heading: '',
         showHideTransition: 'fade',
-        allowToastClose: true,
-        hideAfter: 3000,
-        loader: true,
+        allowToastClose: false,
+        hideAfter: 1500,
+        loader: false,
         loaderBg: '#9EC600',
         stack: 5,
-        position: 'bottom-left',
+        position: 'mid-center',
         bgColor: false,
         textColor: false,
-        textAlign: 'left',
+        textAlign: 'center',
         icon: false,
         beforeShow: function () {},
         afterShown: function () {},

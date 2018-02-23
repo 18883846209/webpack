@@ -19,7 +19,7 @@ module.exports = {
 		publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath
 	},
 	resolve: {
-		extensions: ['.js', '.json'],
+		extensions: ['.js', '.json', '.ts', '.tsx'],
 		alias: {
 			'@': resolve('src')
 		}
@@ -37,6 +37,11 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
+				include: resolve('src')
+			},
+			{
+				test: /\.tsx?$/,
+				loader: 'ts-loader',
 				include: resolve('src')
 			},
 			{

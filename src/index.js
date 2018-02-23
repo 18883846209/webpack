@@ -10,17 +10,13 @@ $(() => {
 		console.log('wx');
 	}
 	console.log(util.formatDate(new Date(), 'yy-MM-dd hh:mm:ss'));
-	// console.log(util.checkPhone())
-	$('body').click(() => {
+	$('.border1').click(() => {
+		// console.log(util.checkPhone());
 		$.toast().reset('all');
-		$.toast({
-			text: 'this is toast',
-			// text: '加载中...aaa',
-			loader: false,
-			hideAfter: 1300,
-			position: 'mid-center',
-			textAlign: 'center',
-			allowToastClose: false
-		});
+		$.toast('this is toast');
 	});
+	$('.transform').click(() => {
+		$('.transform').css('transform', 'rotateY(180deg)');
+	});
+	document.body.addEventListener('touchstart', () => {});
 });

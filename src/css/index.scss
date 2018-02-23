@@ -2,17 +2,59 @@
 body {
     // display: flex;
 	// justify-content: center;
+	height: 100vh;
+	overflow: hidden;
 	text-align: center;
     font-size: 20px;
-    color: red;
+	color: red;
+	padding-top: 20px;
 	@include _bg('../img/bg');
     .border1 {
 		position: relative;
-		margin: 20px auto 0;
+		// margin: 20px auto 0;
 	}
-	.test {
-		position: relative;
-		margin-top: 10px;
+	.scroll {
 		width: 100%;
+		// height: 60vh;
+		// overflow-y: scroll;
+		.item {
+			max-width: 100%;
+			width: 100%;
+			height: 100px;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			padding-left: 20px;
+			&:active {
+				background-color: #eee;
+			}
+		}
+	}
+	.transform {
+		position: relative;
+		width: 102px;
+		height: 178px;
+		perspective: 1000;
+		transform-style: preserve-3d;
+		transition: transform 1s;
+		.front, .back {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			backface-visibility: hidden;
+			transform-style: preserve-3d;
+		}
+		.front {
+			background: url('../img/bg1.jpg') no-repeat center;
+			z-index: 5;
+		}
+		.back {
+			background: url('../img/bg2.jpg') no-repeat center;
+			transform: rotateY(180deg);
+		}
+		.fliped {
+			transform: rotateY(180deg);
+		}
 	}
 }

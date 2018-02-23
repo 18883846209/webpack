@@ -1,13 +1,14 @@
 /**
  * jQuery toast plugin created by Kamran Ahmed copyright MIT license 2014
  */
-.jq-toast-wrap { display: block; position: fixed;  pointer-events: none !important; margin: 0; padding: 0; letter-spacing: normal; z-index: 9000 !important; }
+.jq-toast-wrap { display: block; position: fixed !important; max-width: 80%; pointer-events: none !important; margin: 0; padding: 0; letter-spacing: normal; z-index: 9000 !important; }
 .jq-toast-wrap * { margin: 0; padding: 0; }
 
-.jq-toast-wrap.bottom-left { bottom: 20px; left: 20px; }
-.jq-toast-wrap.bottom-right { bottom: 20px; right: 40px; }
-.jq-toast-wrap.top-left { top: 20px; left: 20px; }
-.jq-toast-wrap.top-right { top: 20px; right: 40px; }
+.bottom-left { bottom: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 40px; }
+.top-left { top: 20px; left: 20px; }
+.top-right { top: 20px; right: 40px; }
+.mid-center { top: 0; right: 0; left: 0; bottom: 0; margin: auto; }
 
 .jq-toast-single { display: block; width: 100%; padding: 10px; margin: 0px 0px 5px; border-radius: 4px; font-size: 12px; font-family: arial, sans-serif; line-height: 17px; position: relative;  pointer-events: all !important; background-color: #444444; color: white; }
 

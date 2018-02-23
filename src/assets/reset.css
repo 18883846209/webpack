@@ -56,17 +56,6 @@
         background-color: #000;
     }
     
-    input::-webkit-input-placeholder {
-        font-size: 15px;
-        color: rgba(51, 51, 51, 0.3);
-    }
-    
-    input:focus {
-        -webkit-appearance: none;
-        outline: none;
-        outline-style: none;
-        box-shadow: none;
-    }
  html,
  body {
      /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -380,8 +369,13 @@
  [type="number"]::-webkit-outer-spin-button {
      height: auto;
  }
- 
- 
+
+input:focus {
+    input-webkit-appearance: none;
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+}
  /* 取消chrome下默认的文本框聚焦样式 */
  
  input,
@@ -394,6 +388,7 @@
  
  input:-webkit-autofill {
      -webkit-box-shadow: 0 0 0 30px white inset;
+     box-shadow: 0 0 0 30px white inset;
  }
  
  
@@ -401,16 +396,27 @@
  
  input::-moz-placeholder,
  textarea::-moz-placeholder {
-     color: #cccccc;
+    font-size: 15px;
+    color: rgba(51, 51, 51, 0.3);
  }
  
  input:-ms-input-placeholder,
  textarea:-ms-input-placeholder {
-     color: #cccccc;
+    font-size: 15px;
+    color: rgba(51, 51, 51, 0.3);
  }
  
  input::-webkit-input-placeholder,
  textarea::-webkit-input-placeholder {
-     color: #cccccc;
+    font-size: 15px;
+    color: rgba(51, 51, 51, 0.3);
+ }
+ /* ::-webkit-input-placeholder {
+    font-size: 15px;
+    color: rgba(51, 51, 51, 0.3);
+} */
+ input {
+    -webkit-appearance: none;
+    border: none;
  }
  

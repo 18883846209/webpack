@@ -23,6 +23,7 @@
     "@types/jquery": "^3.2.16"
   },
   "devDependencies": {
+    "autosize": "^4.0.0",
     "babel-core": "^6.25.0",
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.0.0",

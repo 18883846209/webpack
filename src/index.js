@@ -4,6 +4,7 @@ import '../static/jquery.toast.css';
 import '../static/jquery.toast';
 import util from './util/util';
 import './css/index.scss';
+// import autosize from '../static/autosize';
 
 $(() => {
 	if (util.isWeixin) {
@@ -19,4 +20,5 @@ $(() => {
 		$('.transform').css('transform', 'rotateY(180deg)');
 	});
 	document.body.addEventListener('touchstart', () => {});
+	// autosize(document.querySelectorAll('textarea'));
 });

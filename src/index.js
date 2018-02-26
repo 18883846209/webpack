@@ -21,4 +21,30 @@ $(() => {
 	});
 	document.body.addEventListener('touchstart', () => {});
 	// autosize(document.querySelectorAll('textarea'));
+	let top;
+	// document.querySelector('.scroll').onscroll = () => {
+	// 	console.log(document.querySelector('.scroll').scrollTop);
+	// 	top = document.querySelector('.scroll').scrollTop;
+	// };
+	$('.scroll').click(() => {
+		document.querySelector('.scroll').scrollTop = top;
+		$('.scroll').css({
+			position: 'fixed'
+		});
+		$('.maskscroll').css({
+			overflowY: 'scroll'
+		});
+		$('.showmask').removeClass('hidden');
+	});
+	$('.showmask .item').click(() => {
+		$('.showmask').addClass('hidden');
+		console.log(document.querySelector('.scroll').scrollTop);
+	});
+	$('#input').on('compositionend', () => {
+		let len = $('#input').val().length;
+		if (len > 5) {
+			$.toast().reset('all');
+			$.toast('不能超过5个字');
+		}
+	});
 });

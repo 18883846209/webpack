@@ -36,7 +36,7 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
-				loader: 'babel-loader',
+				loader: 'babel-loader?cacheDirectory', // 开启缓存
 				include: resolve('src')
 			},
 			{
@@ -50,7 +50,7 @@ module.exports = {
 				options: {
 					limit: 10000,
 					name: utils.assetsPath('img/[name].[hash:7].[ext]')
-				}
+				},
 			},
 			{
 				test: /\.html$/,

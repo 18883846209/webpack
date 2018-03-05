@@ -17,7 +17,7 @@ var merge = require('webpack-merge')
 
 // 多入口配置
 exports.entries = function () {
-  var entryFiles = glob.sync(PAGE_PATH + '/*.ts') // 同步匹配文件
+  var entryFiles = glob.sync(PAGE_PATH + '/*.js') // 同步匹配文件(typescript项目需要将js改成ts)
   var map = {}
   entryFiles.forEach((filePath) => {
     var filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))

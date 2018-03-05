@@ -5,7 +5,7 @@ import '../static/jquery.toast';
 import util from './util/util';
 import './css/index.scss';
 // import autosize from '../static/autosize';
-const img = require('./img/bg1.jpg');
+// const img = require('./img/bg1.jpg');
 
 $(() => {
 	if (util.isWeixin) {
@@ -49,5 +49,5 @@ $(() => {
 			$.toast('不能超过5个字');
 		}
 	});
-	$('body').append(`<img src="${img}" />`);
+	// $('body').append(`<img src="${img}" />`);
 });

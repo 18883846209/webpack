@@ -10,6 +10,11 @@ body {
 	color: red;
 	padding-top: 20px;
 	@include _bg('../img/bg');
+	.text {
+		transition: all 1s;
+		// opacity: 0;
+		display: none;
+	}
 	.showmask {
 		position: fixed;
 		top: 0;

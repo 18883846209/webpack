@@ -14,8 +14,9 @@ $(() => {
 	console.log(util.formatDate(new Date(), 'yy-MM-dd hh:mm:ss'));
 	$('.border1').click(() => {
 		// console.log(util.checkPhone());
-		$.toast().reset('all');
-		$.toast('this is toast');
+		// $.toast().reset('all');
+		// $.toast('this is toast');
+		$('.text').css('display', 'block');
 	});
 	$('.transform').click(() => {
 		$('.transform').css('transform', 'rotateY(180deg)');

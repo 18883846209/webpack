@@ -56,7 +56,7 @@ $(() => {
 		let direction = GetSlideDirection(startX, startY, endX, endY);
 		switch (direction) {
 			case 0:
-				// alert('没滑动');
+				// alert('没有滑动');
 				break;
 			case 1:
 				// alert('向上');
